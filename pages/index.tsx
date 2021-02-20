@@ -1,10 +1,7 @@
-import styled from 'styled-components'
+import React from 'react';
 
-const Title = styled.h1`
-  color: red;
-  font-size: 50px;
-`
+const Home: React.FC = () => (
+  <div> Teste </div>
+);
 
-export default function Home() {
-  return <Title>My page</Title>
-}
+export default Home;

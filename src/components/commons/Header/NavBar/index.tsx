@@ -1,10 +1,8 @@
-import React, { useContext } from 'react';
-import { ModeChangeContext } from '@/components/store/ThemeManager';
+import React from 'react';
 import NavBarStyle from './styles';
 import Grid from '@/components/layout/Grid';
 
 const NavBar: React.FC = () => {
-  const toggleMode = useContext(ModeChangeContext);
 
   return(
     <NavBarStyle.Container>
@@ -21,7 +19,7 @@ const NavBar: React.FC = () => {
       <NavBarStyle.UserPhotoContainer>
           <NavBarStyle.UserPhoto />
       </NavBarStyle.UserPhotoContainer>
-      
+
       <Grid.Container>
         <Grid.Row>
           <Grid.Col

@@ -1,6 +1,5 @@
 import React from 'react';
 import NavBarStyle from './styles';
-import Grid from '@/components/layout/Grid';
 
 const NavBar: React.FC = () => {
 

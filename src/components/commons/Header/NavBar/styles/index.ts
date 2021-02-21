@@ -37,7 +37,7 @@ const UserPhotoContainer = styled.div`
    `,
     desktop: css`
       width: 275px;
-      margin-left: 100px;
+      margin-left: 55px;
     `, 
   })}
 `;
@@ -45,7 +45,7 @@ const UserPhotoContainer = styled.div`
 const UserPhoto = styled.div`
   position: absolute;
   border-radius: 50%;
-  border: 10px solid rgba(0,0,0,0.5);
+  border: 10px solid rgba(0,0,0,0.75);
   ${breakpointsMedia({ 
      mobile: css`
       height: 250px;

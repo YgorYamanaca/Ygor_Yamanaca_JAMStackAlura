@@ -8,7 +8,7 @@ const Container = styled.header`
   background: linear-gradient(180deg, rgba(5,0,96,1) 0%, rgba(9,9,121,1) 50%, rgba(5,183,219,1) 100%);
   ${breakpointsMedia({ 
     mobile: css`
-      height: 35%;
+      height: 40%;
     `,
     desktop: css`
       height: 35%;

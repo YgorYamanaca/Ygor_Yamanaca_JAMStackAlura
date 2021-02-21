@@ -1,8 +1,8 @@
 import React from 'react';
 import BoxContainer from '@/components/layout/Box';
 import Header from '@/components/commons/Header';
-import Footer from '@/components/commons/Footer';
-import ProjectsWrapper from '@/components/commons/ProjectsWrapper';
+// import Footer from '@/components/commons/Footer';
+// import ProjectsWrapper from '@/components/commons/ProjectsWrapper';
 
 const Home: React.FC = () => {
   return(

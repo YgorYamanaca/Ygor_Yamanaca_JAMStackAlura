@@ -13,8 +13,8 @@ const Home: React.FC = () => {
       justifyContent="space-between"
     >
       <Header />
-      <ProjectsWrapper />
-      <Footer />
+      {/* <ProjectsWrapper />
+      <Footer /> */}
     </BoxContainer>
   );
 };

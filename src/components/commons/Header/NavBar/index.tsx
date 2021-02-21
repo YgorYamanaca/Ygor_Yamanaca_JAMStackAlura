@@ -6,29 +6,15 @@ const NavBar: React.FC = () => {
 
   return(
     <NavBarStyle.Container>
-      <Grid.Container>
-        <Grid.Row>
-          <Grid.Col
-            value={6}
-          >
-            aaaaaaaaa
-          </Grid.Col>
-        </Grid.Row>
-      </Grid.Container>
+      <div>
 
+      </div>
       <NavBarStyle.UserPhotoContainer>
           <NavBarStyle.UserPhoto />
       </NavBarStyle.UserPhotoContainer>
-
-      <Grid.Container>
-        <Grid.Row>
-          <Grid.Col
-            value={6}
-          >
-            aaaaaaaaa
-          </Grid.Col>
-        </Grid.Row>
-      </Grid.Container>
+      <div>
+        
+      </div>
     </NavBarStyle.Container>
   );
 };

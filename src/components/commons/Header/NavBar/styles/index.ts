@@ -33,13 +33,13 @@ const UserPhotoContainer = styled.div`
   position:relative;
   ${breakpointsMedia({ 
      mobile: css`
-      width: 175px;
+      width: 250px;
    `,
     desktop: css`
-      width: 225px;
+      width: 275px;
+      margin-left: 100px;
     `, 
   })}
-  margin: 0 105px;
 `;
 
 const UserPhoto = styled.div`
@@ -48,13 +48,13 @@ const UserPhoto = styled.div`
   border: 10px solid rgba(0,0,0,0.5);
   ${breakpointsMedia({ 
      mobile: css`
-      height: 350px;
-      width: 350px;
+      height: 250px;
+      width: 250px;
    `,
 
     desktop: css`
-      height: 225px;
-      width: 225px;
+      height: 275px;
+      width: 275px;
     `, 
   })}
   height: 100%;

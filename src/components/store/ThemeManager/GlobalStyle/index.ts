@@ -5,16 +5,15 @@ const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
   }
+
   ${normalize}
-  body {
+  
+  html, body {
+    display:flex;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-  }
-  html, body {
-    display: flex;
-    min-height: 100vh;
     width: 100%;
+    min-height: 100vh;
     font-family: ${(props) => props.theme.fontFamily};
   }
   #__next {

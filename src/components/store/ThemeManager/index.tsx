@@ -3,10 +3,10 @@ import { ThemeProvider } from 'styled-components';
 import GlobalStyle from './GlobalStyle';
 import darkTheme from './modes/darkMode';
 import ligthTheme from './modes/ligthMode';
-
+import typography from './typography';
 type State = 'Dark' | 'Light';
 
-export const ModeChangeContext = createContext<Function>(Function);
+export const ModeChangeContext = createContext<{mode: State, toggleMode: Function}>({mode: 'Light', toggleMode: Function});
 
 const ThemeManager: React.FC = ({children}) => {
   const [mode, setMode] = React.useState<State>('Light');
@@ -19,10 +19,11 @@ const ThemeManager: React.FC = ({children}) => {
   )
 
   return(
-    <ModeChangeContext.Provider value={toggleMode}>
+    <ModeChangeContext.Provider value={{mode, toggleMode}}>
       <ThemeProvider theme={{
         colors: mode === 'Light'? darkTheme : ligthTheme,
-        fontFamily: '\'Rubik\', sans-serif'
+        fontFamily: '\'Fira Sans Condensed\', sans-serif',
+        typography
       }}>
         <GlobalStyle />
         {children}

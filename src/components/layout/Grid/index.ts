@@ -101,7 +101,6 @@ const Col = styled.div<IGridProps>`
 
   ${(props) => {
     return (Object.keys(props) as Array<keyof CSSProperties>).map((keys) => {
-      console.log(keys);
       return propToStyle(keys)
     })
   }}

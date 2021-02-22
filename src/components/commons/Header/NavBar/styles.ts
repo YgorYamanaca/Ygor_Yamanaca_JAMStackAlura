@@ -2,12 +2,11 @@ import styled, {css} from 'styled-components';
 import breakpointsMedia from 'utils/breakpointsMedia';
 
 const Container = styled.nav`
-  width:100%;
   background-color: #ffffff;
   display: flex;
   ${breakpointsMedia({
     mobile: css`
-      height: 40px;
+      height: 50px;
       justify-content: center;
     `,
     desktop: css`
@@ -27,16 +26,16 @@ const UserPhotoContainer = styled.div`
       order: -1;
     `, 
   })}
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  position:relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   ${breakpointsMedia({ 
      mobile: css`
-      width: 250px;
+      min-width: 235px;
    `,
     desktop: css`
-      width: 275px;
+      min-width: 275px;
       margin-left: 55px;
     `, 
   })}
@@ -48,28 +47,35 @@ const UserPhoto = styled.div`
   border: 10px solid rgba(0,0,0,0.75);
   ${breakpointsMedia({ 
      mobile: css`
-      height: 250px;
-      width: 250px;
+      height: 235px;
+      width: 235px;
    `,
 
     desktop: css`
-      height: 275px;
-      width: 275px;
+      height: 205px;
+      width: 205px;
     `, 
   })}
-  height: 100%;
-  width:100%;
+  bottom: -20px;
   background-image:url('/images/maxresdefault.jpg');
   background-position:center;
   background-size: cover;
   box-shadow: inset 10px 10px 55px -15px rgba(0,0,0,0.5);
 `;
 
+const MenuContainer = styled.div`
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content:space-evenly;
+  place-items:center;
+`;
 
 const NavBarStyle = {
   Container,
   UserPhotoContainer,
   UserPhoto,
+  MenuContainer,
 }
 
 export default NavBarStyle;

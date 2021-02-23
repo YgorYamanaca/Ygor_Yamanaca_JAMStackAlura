@@ -1,4 +1,4 @@
-import ITypographyVariants from '@/theme/styles/typographys';
+import ITypographyVariants from '@/interfaces/typographys';
 import { css, CSSProp } from 'styled-components';
 import breakpointsMedia from 'utils/breakpointsMedia';
 

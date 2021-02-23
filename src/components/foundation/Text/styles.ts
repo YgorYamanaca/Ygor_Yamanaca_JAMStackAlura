@@ -1,8 +1,8 @@
 import styled, { CSSProperties } from 'styled-components';
 import get from 'lodash/get';
-import ITypographyVariants from '@/theme/styles/typographys';
 import { propToStyle } from 'utils/propToStyle';
 import TextStyleVariantsMap from './TypographyMap';
+import ITypographyVariants from '@/interfaces/typographys';
 
 interface ITextBaseStyle{
   readonly variant: keyof ITypographyVariants,

@@ -24,7 +24,8 @@
       "@/assets/*": ["assets/*"],
       "@/components/*": ["components/*"],
       "@/theme/*": ["theme/*"],
-      "@/store/*": ["store/*"]
+      "@/store/*": ["store/*"],
+      "@/interfaces/*": ["interfaces/*"]
     }
   },
   "exclude": ["node_modules"],

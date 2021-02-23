@@ -1,6 +1,6 @@
 import SunAndMoonIcon from '@/assets/Icons/sunAndMoon';
 import Text from '@/components/foundation/Text';
-import { ModeChangeContext } from '@/components/store/ThemeManager';
+import { ModeChangeContext } from '@/theme/ThemeManager';
 import React, { useContext } from 'react';
 import IconButton from '../IconButton';
 import NavBar from './NavBar';

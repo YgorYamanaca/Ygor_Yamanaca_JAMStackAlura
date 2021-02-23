@@ -1,9 +1,9 @@
 import React, { ReactNode } from 'react';
 import { CSSProperties } from 'styled-components';
-import ITypographyVariants from '@/theme/styles/typographys';
 import TextBase from './styles';
-import IBreakpoints from '@/theme/styles/breakpoints';
+import IBreakpoints from 'interfaces/breakpoints';
 import PropTypes from 'prop-types';
+import ITypographyVariants from '@/interfaces/typographys';
 
 type CSSPropsMap = {
   [cssKey in keyof CSSProperties]?: CSSProperties[cssKey] |
@@ -18,10 +18,11 @@ interface ITextProps extends CSSPropsMap {
 }
 
 const Text: React.FC<ITextProps> = ({
-  tag = 'span', variant = 'link', children, ...rest
+  tag = 'span', variant = 'link', color='#ffffff', children, ...rest
 }: ITextProps) => (
   <TextBase
     variant={variant}
+    color={color}
     {...rest}
   >
     {children}

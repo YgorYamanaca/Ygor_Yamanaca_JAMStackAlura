@@ -1,4 +1,4 @@
-import IProject from 'interface/Porject';
+import IProject from 'interfaces/Porject';
 import React from 'react';
 import ProjectBox from '../ProjectBox';
 import ProjectsWrapperStyle from './styles';

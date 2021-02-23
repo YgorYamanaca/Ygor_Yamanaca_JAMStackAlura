@@ -1,5 +1,10 @@
 import { css, CSSProp } from 'styled-components';
-import IBreakpoints, { breakpoints } from '@/theme/styles/breakpoints';
+import IBreakpoints from 'interfaces/breakpoints';
+
+const breakpoints: IBreakpoints = {
+  mobile: 0,
+  desktop: 768,
+};
 
 function breakpointsMedia(cssByBreakpoint: {[key in keyof IBreakpoints]?: CSSProp}): CSSProp {
   const breakpointNames: (keyof IBreakpoints)[] = Object.keys(breakpoints) as Array<keyof IBreakpoints>;

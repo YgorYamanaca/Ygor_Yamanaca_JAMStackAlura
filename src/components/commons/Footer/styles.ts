@@ -16,6 +16,7 @@ const Container = styled.footer`
     `,  
   })}
   box-shadow: 0px -15px 20px -15px rgba(0,0,0,0.5);
+  background-color: ${({ theme }) => theme.colors.primary.main.color};
 `;
 
 const TextBox = styled.div`

@@ -21,8 +21,8 @@ const darkTheme = {
   },
   background: {
     main: {
-      color: 'black',
-      contrastText: '#fff',
+      color: '#1186a7',
+      contrastText: '#fff'
     },
   },
   borders: {
@@ -34,3 +34,11 @@ const darkTheme = {
 };
 
 export default darkTheme;
+
+// #a6dce6
+// #86d3ee
+// #86cad5
+// #54b6e5
+// #41abc3
+// #44c0c2
+// #1186a7

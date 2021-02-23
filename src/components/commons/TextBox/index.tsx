@@ -1,4 +1,4 @@
-import ITextBox from 'interface/TextBox';
+import ITextBox from 'interfaces/TextBox';
 import React from 'react';
 import TextBoxStyle from './styles';
 

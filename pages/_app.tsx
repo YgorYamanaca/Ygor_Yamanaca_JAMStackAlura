@@ -1,7 +1,7 @@
 import React from 'react';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
-import ThemeManager from '@/components/store/ThemeManager';
+import ThemeManager from '@/theme/ThemeManager';
 
 const App: React.FC<AppProps> = ({ Component, pageProps }) => (
   <>

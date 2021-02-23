@@ -1,4 +1,4 @@
-import IBreakpoints from '@/theme/styles/breakpoints';
+import IBreakpoints from 'interfaces/breakpoints';
 import styled, { css, CSSProperties } from 'styled-components';
 import breakpointsMedia from 'utils/breakpointsMedia';
 import { propToStyle } from 'utils/propToStyle';

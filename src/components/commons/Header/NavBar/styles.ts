@@ -2,7 +2,7 @@ import styled, {css} from 'styled-components';
 import breakpointsMedia from 'utils/breakpointsMedia';
 
 const Container = styled.nav`
-  background-color: #ffffff;
+  background-color: ${({ theme }) => theme.colors.primary.main.color};
   display: flex;
   ${breakpointsMedia({
     mobile: css`
@@ -14,7 +14,9 @@ const Container = styled.nav`
       justify-content: flex-start;
     `,  
   })}
-  box-shadow: 0px 15px 20px -15px rgba(0,0,0,0.5);
+  box-shadow: 1px 15px 20px -15px rgba(0,0,0, 0.5);
+  z-index:10;
+  padding:0 5px;
 `;
 
 const UserPhotoContainer = styled.div`
@@ -32,7 +34,7 @@ const UserPhotoContainer = styled.div`
   position: relative;
   ${breakpointsMedia({ 
      mobile: css`
-      min-width: 235px;
+      min-width: 200px;
    `,
     desktop: css`
       min-width: 275px;
@@ -44,11 +46,11 @@ const UserPhotoContainer = styled.div`
 const UserPhoto = styled.div`
   position: absolute;
   border-radius: 50%;
-  border: 10px solid rgba(0,0,0,0.75);
+  border: 7.5px solid ${({ theme }) => theme.colors.primary.main.color};
   ${breakpointsMedia({ 
      mobile: css`
-      height: 235px;
-      width: 235px;
+      height: 200px;
+      width: 200px;
    `,
 
     desktop: css`
@@ -57,10 +59,9 @@ const UserPhoto = styled.div`
     `, 
   })}
   bottom: -20px;
-  background-image:url('/images/maxresdefault.jpg');
+  background-image:url('https://placehold.it/200x200');
   background-position:center;
   background-size: cover;
-  box-shadow: inset 10px 10px 55px -15px rgba(0,0,0,0.5);
 `;
 
 const MenuContainer = styled.div`

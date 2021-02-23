@@ -1,6 +1,6 @@
+import IColors from '@/interfaces/colors';
+import ITypographyVariants from '@/interfaces/typographys';
 import 'styled-components';
-import IColors from './styles/colors';
-import ITypographyVariants from './styles/typographys';
 
 declare module 'styled-components' {
   export interface DefaultTheme {

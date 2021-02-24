@@ -4,7 +4,7 @@ import breakpointsMedia from 'utils/breakpointsMedia';
 const Container = styled.div`
   width: 100%;
   height: 100%;
-  padding: 65px 0;
+  padding: 15px;
   background-color: ${({ theme }) => theme.colors.background.main.color};
 `;
 

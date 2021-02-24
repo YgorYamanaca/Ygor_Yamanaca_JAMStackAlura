@@ -2,12 +2,16 @@ import ITextBox from 'interfaces/TextBox';
 import React from 'react';
 import TextBoxStyle from './styles';
 
-const TextBox: React.FC<ITextBox> = ({ title, context }) => {
+const TextBox: React.FC<ITextBox> = ({ title, children }) => {
 
   return(
     <TextBoxStyle.Container>
-      {title}
-      {context}
+      <TextBoxStyle.TitleBox> 
+        {title}
+      </TextBoxStyle.TitleBox>
+      <TextBoxStyle.ContentBox>
+        {children}
+      </TextBoxStyle.ContentBox>
     </TextBoxStyle.Container>
   );
 };

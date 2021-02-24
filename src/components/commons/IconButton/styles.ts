@@ -8,16 +8,21 @@ const Container = styled.div`
   height: 45px;
   width :45px;
   cursor: pointer;
+
   &:hover{
     background-color: ${({ theme }) => theme.colors.secondary.main.color};
     & > svg { 
-      transform: scale(1.1,1.1);
-      transition: transform 0.5s ease-in-out;
+      transform: scale(1.1, 1.1);
     }
   };
+  
+  & > svg {
+    transition: transform 0.5s ease-in-out;
+  };
+
   transition: background-color 0.5s ease-in-out;
   &:active{
-    transform: scale(0.95,0.95);
+    transform: scale(0.97,0.97);
   }
 `;
 

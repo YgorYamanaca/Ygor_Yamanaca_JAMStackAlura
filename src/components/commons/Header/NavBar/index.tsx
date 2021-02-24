@@ -16,13 +16,17 @@ const NavBar: React.FC = () => {
       </NavBarStyle.UserPhotoContainer>
 
       <NavBarStyle.MenuContainer>
-        <IconButton>
-          <LinkedinIcon />
-        </IconButton>
-
-        <IconButton>
-          <GitHubIcon />
-        </IconButton>
+      <a href={'https://www.linkedin.com/in/ygor-yamanaca/'}>
+          <IconButton>
+            <LinkedinIcon />
+          </IconButton>
+      </a>
+        
+        <a href={'https://github.com/YgorYamanaca'}>
+          <IconButton>
+            <GitHubIcon />
+          </IconButton>
+        </a>
       </NavBarStyle.MenuContainer>
     </NavBarStyle.Container>
   );

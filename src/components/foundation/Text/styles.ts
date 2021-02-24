@@ -11,7 +11,7 @@ interface ITextBaseStyle{
 const TextBase = styled.span<ITextBaseStyle>`
   ${({ variant }) => TextStyleVariantsMap[variant]};
 
-  color: ${({ theme, color }) => get(theme, `colors.${color}.color`)};
+  color: ${({ theme, color }) => get(theme, `colors.${color}.main.color`)};
 
   ${(props) => {
     return (Object.keys(props) as Array<keyof CSSProperties>).map((keys) => {

@@ -11,11 +11,11 @@ const Header: React.FC = () => {
   return(
     <>
       <HeaderStyle.Container>
-        <HeaderStyle.AbsoluteContainer>
+        {/* <HeaderStyle.AbsoluteContainer>
           <IconButton onClick={toggleMode}>
             <SunAndMoonIcon mode={mode} />
           </IconButton>
-        </HeaderStyle.AbsoluteContainer>
+        </HeaderStyle.AbsoluteContainer> */}
         <HeaderStyle.TextBox>
           <Text variant='title'>
             Ygor Yamanaca 

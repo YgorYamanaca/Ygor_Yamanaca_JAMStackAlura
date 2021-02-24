@@ -7,29 +7,31 @@ const ProjectsWrapper: React.FC = ({}) => {
 
   const projetctsContent: IProject[] = [
     {
-      title: 'Projeto 1',
-      context: 'Lorem 1 ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie rhoncus vestibulum. Aenean blandit velit.',
-      projectPhoto: 'https://placehold.it/250x200',
+      title: 'GhibliQuiz',
+      context: 'Projeto desenvolvido durante a imersão React oferecido pela Alura.',
+      projectPhoto: 'images/AluraQuiz.jpg',
+      projectUrl: 'https://github.com/YgorYamanaca/ghibliquiz'
     },
     {
-      title: 'Projeto 2',
-      context: 'Lorem 2 ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie rhoncus vestibulum. Aenean blandit velit.',
-      projectPhoto: 'https://placehold.it/250x200',
+      title: 'Instalura',
+      context: 'Projeto desenvolvido durante o bootcamp da alura.',
+      projectPhoto: 'images/instalura.jpg',
+      projectUrl: 'https://github.com/YgorYamanaca/instalura-base'
     },
     {
       title: 'Projeto 3',
       context: 'Lorem 3 ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie rhoncus vestibulum. Aenean blandit velit.',
-      projectPhoto: 'https://placehold.it/250x200',
+      projectPhoto: 'https://placehold.it/300x200',
     },
     {
       title: 'Projeto 4',
       context: 'Lorem 4 ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie rhoncus vestibulum. Aenean blandit velit.',
-      projectPhoto: 'https://placehold.it/250x200',
+      projectPhoto: 'https://placehold.it/300x200',
     },
     {
       title: 'Projeto 5',
       context: 'Lorem 5 ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie rhoncus vestibulum. Aenean blandit velit.',
-      projectPhoto: 'https://placehold.it/250x200',
+      projectPhoto: 'https://placehold.it/300x200',
     }
   ]
 

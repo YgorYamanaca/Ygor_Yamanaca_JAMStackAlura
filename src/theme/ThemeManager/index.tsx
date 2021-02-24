@@ -21,7 +21,7 @@ const ThemeManager: React.FC = ({children}) => {
   return(
     <ModeChangeContext.Provider value={{mode, toggleMode}}>
       <ThemeProvider theme={{
-        colors: mode === 'Light'? darkTheme : ligthTheme,
+        colors: mode === 'Light'? ligthTheme : darkTheme,
         fontFamily: '\'Fira Sans Condensed\', sans-serif',
         typography
       }}>

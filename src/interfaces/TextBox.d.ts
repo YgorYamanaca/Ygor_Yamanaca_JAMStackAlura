@@ -1,6 +1,6 @@
 type ITextBox = {
   title: string,
-  context: string,
+  children: React.ReactNode,
 }
 
 export default ITextBox;

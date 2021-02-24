@@ -1,6 +1,7 @@
 import Text from '@/components/foundation/Text';
 import IProject from 'interfaces/Porject';
 import React from 'react';
+import GitHubCorner from '../GitHubCorner';
 import ProjectBoxStyle from './styles';
 
 type IProjectBox = {
@@ -11,7 +12,11 @@ const ProjectBox: React.FC<IProjectBox> = ({ project }) => {
 
   return(
     <ProjectBoxStyle.Container>
-      <ProjectBoxStyle.ImageBox src={project.projectPhoto} />
+      <a href={project.projectUrl}>
+        <ProjectBoxStyle.ImageBox intern={project.projectPhoto}>
+          <GitHubCorner />
+        </ProjectBoxStyle.ImageBox>
+      </a>
       
       <ProjectBoxStyle.ProjectContext>
         <Text variant='textTitle'>

@@ -59,7 +59,7 @@ const UserPhoto = styled.div`
     `, 
   })}
   bottom: -20px;
-  background-image:url('https://placehold.it/200x200');
+  background-image:url('images/Corgygor2.jpg');
   background-position:center;
   background-size: cover;
 `;

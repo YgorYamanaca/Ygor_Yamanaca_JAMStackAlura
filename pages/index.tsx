@@ -25,7 +25,7 @@ const Home: React.FC = () => {
         <br></br>
         Uma curiosidade sobre mim é que morei durante 9 anos no japão, por conta disso estudei durante 6 anos em uma escola japonesa, equivalente ao ensino fundamental primário no Brasil. Por esse motivo entendo muito bem o japonês e consigo me comunicar, porém tenho dificuldade na escrita e na leitura e é o que pretendo melhorar.
         <br></br>
-        No momento estou trabalhando no inglês / espanhol.
+        No momento estou trabalhando no meu inglês / espanhol.
         </Text>
       </TextBox>
       <ProjectsWrapper />

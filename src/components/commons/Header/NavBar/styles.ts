@@ -59,7 +59,7 @@ const UserPhoto = styled.div`
     `, 
   })}
   bottom: -20px;
-  background-image:url('images/Corgygor2.jpg');
+  background-image:url('images/Corgygor3.jpg');
   background-position:center;
   background-size: cover;
 `;

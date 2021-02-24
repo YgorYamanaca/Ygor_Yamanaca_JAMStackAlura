@@ -1,13 +1,13 @@
-import SunAndMoonIcon from '@/assets/Icons/sunAndMoon';
+import React from 'react';
 import Text from '@/components/foundation/Text';
-import { ModeChangeContext } from '@/theme/ThemeManager';
-import React, { useContext } from 'react';
-import IconButton from '../IconButton';
+// import IconButton from '../IconButton';
+// import { ModeChangeContext } from '@/theme/ThemeManager';
+// import SunAndMoonIcon from '@/assets/Icons/sunAndMoon';
 import NavBar from './NavBar';
 import HeaderStyle from './styles';
 
 const Header: React.FC = () => {
-  const { mode , toggleMode } = useContext(ModeChangeContext);
+  // const { mode , toggleMode } = useContext(ModeChangeContext);
   return(
     <>
       <HeaderStyle.Container>

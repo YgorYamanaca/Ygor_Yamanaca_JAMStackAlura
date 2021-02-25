@@ -12,8 +12,13 @@ const ProjectBox: React.FC<IProjectBox> = ({ project }) => {
 
   return(
     <ProjectBoxStyle.Container>
+      {project.status &&
+        <ProjectBoxStyle.StatusTag status={project.status}>
+          {project.status}
+        </ProjectBoxStyle.StatusTag>
+      }
       <a href={project.projectUrl}>
-        <ProjectBoxStyle.ImageBox intern={project.projectPhoto}>
+        <ProjectBoxStyle.ImageBox projectPhoto={project.projectPhoto}>
           <GitHubCorner />
         </ProjectBoxStyle.ImageBox>
       </a>

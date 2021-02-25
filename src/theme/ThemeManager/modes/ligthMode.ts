@@ -29,6 +29,10 @@ const ligthTheme = {
       color: 'yellow',
       contrastText: '#fff',
     },
+  },
+  statusColor: {
+    done: '#43CF3B',
+    inProgress:'#007ACD',
   }
 };
 

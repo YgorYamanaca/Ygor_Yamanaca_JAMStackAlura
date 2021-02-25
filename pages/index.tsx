@@ -15,7 +15,7 @@ const Home: React.FC = () => {
     >
       <Header />
       <TextBox title='Sobre mim'>
-        <Text color={'secondary'} variant={'text'}>
+        <Text color={'primary'} variant={'text'}>
         Atualmente estou cursando o último ano no curso de engenharia de software pela PUC-Campinas e também estou trabalhando como desenvolvedor Front-end. 
         <br></br>
         <br></br>

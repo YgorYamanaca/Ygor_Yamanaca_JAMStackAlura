@@ -1,8 +1,10 @@
+import get from 'lodash/get';
 import styled, { css } from 'styled-components';
 import breakpointsMedia from 'utils/breakpointsMedia';
 
 const Container = styled.div`
   display:flex;
+  position:relative;
   padding: 20px 15px;
   box-shadow: 0 5px 15px 0px rgba(0,0,0,0.5);
   margin: 19px;
@@ -16,7 +18,8 @@ const Container = styled.div`
     desktop: css`
       flex-direction: row;
       justify-content:space-between;
-      max-width: 475px;
+      max-width: 525px;
+      align-items:flex-start;
     `,
   })}
   
@@ -60,25 +63,41 @@ const ProjectContext = styled.div`
   }
 `;
 
-type imgBox = {
-  intern:string;
+type ImageBox = {
+  projectPhoto: string;
 }
 
-const ImageBox = styled.div<imgBox>`
+const ImageBox = styled.div<ImageBox>`
   display:flex;
   border-radius: 5px;
   min-width:300px;
   min-height:200px;
   background-size:cover;
   position:relative;
-  background-image: ${({intern}) => `url(${intern})`};
+  background-image: ${({projectPhoto}) => `url(${projectPhoto})`};
   cursor:pointer;
+`;
+
+type StatusTag = {
+  status: 'Done' | 'In Progress'
+}
+
+const StatusTag = styled.div<StatusTag>`
+  position: absolute;
+  top:8px;
+  left:8px;
+  background-color: ${({theme, status}) => get(theme, `colors.statusColor.${status=== 'Done'? 'done' : 'inProgress'}`)};
+  z-index: 150;
+  padding:2px 10px;
+  border-radius:15px;
+  color: ${({theme}) => theme.colors.primary.main.contrastText};
 `;
 
 const ProjectBoxStyle = {
   Container,
   ProjectContext,
   ImageBox,
+  StatusTag,
 }
 
 export default ProjectBoxStyle;

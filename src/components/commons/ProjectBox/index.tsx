@@ -3,13 +3,14 @@ import IProject from 'interfaces/Porject';
 import React from 'react';
 import GitHubCorner from '../GitHubCorner';
 import ProjectBoxStyle from './styles';
+import { useRouter } from 'next/router';
 
 type IProjectBox = {
   project: IProject
 }
 
 const ProjectBox: React.FC<IProjectBox> = ({ project }) => {
-
+  const router = useRouter();
   return(
     <ProjectBoxStyle.Container>
       {project.status &&
@@ -17,11 +18,11 @@ const ProjectBox: React.FC<IProjectBox> = ({ project }) => {
           {project.status}
         </ProjectBoxStyle.StatusTag>
       }
-      <a href={project.projectUrl}>
-        <ProjectBoxStyle.ImageBox projectPhoto={project.projectPhoto}>
-          <GitHubCorner />
-        </ProjectBoxStyle.ImageBox>
-      </a>
+    
+      <ProjectBoxStyle.ImageBox>
+        <GitHubCorner projectRepoUrl={project.projectRepoUrl}/>
+        <img src={project.projectPhoto} onClick={() => project.projectUrl && router.push(project.projectUrl)}></img>
+      </ProjectBoxStyle.ImageBox>
       
       <ProjectBoxStyle.ProjectContext>
         <Text variant='textTitle'>

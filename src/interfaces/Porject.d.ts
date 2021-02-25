@@ -3,6 +3,7 @@ type IProject = {
   context: string,
   projectPhoto: string,
   projectUrl?: string,
+  projectRepoUrl?: string,
   status?: 'Done' | 'In Progress'
 }
 

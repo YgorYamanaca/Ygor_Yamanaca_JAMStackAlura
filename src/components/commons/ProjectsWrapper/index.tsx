@@ -10,14 +10,16 @@ const ProjectsWrapper: React.FC = ({}) => {
       title: 'GhibliQuiz',
       context: 'Projeto desenvolvido durante a imersão React oferecido pela Alura.',
       projectPhoto: 'images/AluraQuiz.jpg',
-      projectUrl: 'https://github.com/YgorYamanaca/ghibliquiz',
+      projectUrl: 'https://ghibliquiz.ygoryamanaca.vercel.app/',
+      projectRepoUrl: 'https://github.com/YgorYamanaca/ghibliquiz',
       status:'Done'
     },
     {
       title: 'Instalura',
       context: 'Projeto desenvolvido durante o bootcamp da alura.',
       projectPhoto: 'images/instalura.jpg',
-      projectUrl: 'https://github.com/YgorYamanaca/instalura-base',
+      projectUrl: 'https://instalura-base.ygoryamanaca.vercel.app/',
+      projectRepoUrl: 'https://github.com/YgorYamanaca/instalura-base',
       status:'In Progress'
     },
     {

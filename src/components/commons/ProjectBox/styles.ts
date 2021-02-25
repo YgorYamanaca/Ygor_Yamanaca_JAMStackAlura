@@ -30,7 +30,20 @@ const Container = styled.div`
     transform: translate(-5px, -5px);
     box-shadow: 0 5px 25px 0px rgba(0,0,0,0.5);
   }
-  transition: box-shadow, transform,  0.5s ease;
+  transition: box-shadow, transform,  0.25s ease-in-out;
+  &:hover{
+    & > div > div {
+      svg {
+        height: 70px;
+        width: 70px;
+      }
+    }
+  }
+  & > div > div{
+    svg {
+      transition: all 0.25s ease-in-out;
+    }
+  }
 `;
 
 const ProjectContext = styled.div`
@@ -63,19 +76,19 @@ const ProjectContext = styled.div`
   }
 `;
 
-type ImageBox = {
-  projectPhoto: string;
-}
-
-const ImageBox = styled.div<ImageBox>`
+const ImageBox = styled.div`
   display:flex;
-  border-radius: 5px;
-  min-width:300px;
-  min-height:200px;
-  background-size:cover;
+  max-width:300px;
+  max-height:200px;
+  & > img {
+    background-size:cover;
+    min-width:300px;
+    min-height:200px;
+    cursor:pointer;
+    border-radius: 5px;
+  }
   position:relative;
-  background-image: ${({projectPhoto}) => `url(${projectPhoto})`};
-  cursor:pointer;
+  z-index: 10;
 `;
 
 type StatusTag = {
@@ -88,7 +101,7 @@ const StatusTag = styled.div<StatusTag>`
   left:8px;
   background-color: ${({theme, status}) => get(theme, `colors.statusColor.${status=== 'Done'? 'done' : 'inProgress'}`)};
   z-index: 150;
-  padding:2px 10px;
+  padding:2.5px 10px;
   border-radius:15px;
   color: ${({theme}) => theme.colors.primary.main.contrastText};
 `;

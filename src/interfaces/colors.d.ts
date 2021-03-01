@@ -2,6 +2,8 @@ type IColor = {
   main: {
     color?: string
     contrastText?: string
+    colorHex?: string
+    colorHexAlpha?: string
   }
 }
 

@@ -4,17 +4,22 @@ const ligthTheme = {
     main: {
       color: '#01576e',
       contrastText: '#fff',
+      colorHex: 'rgba(1,87,110,1)',
+      colorHexAlpha: 'rgba(1,87,110, 0.5)',
+      
     },
   },
   secondary: {
     main: {
       color: '#41abc3',
       contrastText: '#fff',
+      colorHex: 'rgba(65,171,195, 1)',
+      colorHexAlpha: 'rgba(65,171,195, 0.5)',
     },
   },
   tertiary: {
     main: {
-      color: '#86cad5',
+      color: '#a6dce6',
       contrastText: '#fff',
     },
   },
@@ -22,12 +27,6 @@ const ligthTheme = {
     main: {
       color: '#fff',
       contrastText: '#54b6e5',
-    },
-  },
-  borders: {
-    main: {
-      color: 'yellow',
-      contrastText: '#fff',
     },
   },
   statusColor: {

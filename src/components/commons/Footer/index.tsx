@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
     <FooterStyle.Container>
       <FooterStyle.TextBox>
         <Text variant='text' tag='p'>
-          Feito para o desafio do primeiro módulo
+          Feito por Ygor Yamanaca
         </Text>
       </FooterStyle.TextBox>
     </FooterStyle.Container>

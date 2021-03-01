@@ -8,10 +8,12 @@ const Container = styled.nav`
     mobile: css`
       height: 50px;
       justify-content: center;
+      margin-bottom:45px;
     `,
     desktop: css`
       height: 65px; 
       justify-content: flex-start;
+      margin-bottom:30px;
     `,  
   })}
   box-shadow: 1px 15px 20px -15px rgba(0,0,0, 0.5);

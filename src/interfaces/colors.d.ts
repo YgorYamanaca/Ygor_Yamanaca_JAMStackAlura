@@ -17,7 +17,6 @@ type IColors = {
   secondary: IColor
   tertiary: IColor
   background: IColor
-  borders: IColor
   statusColor: IStatusColor
 }
 

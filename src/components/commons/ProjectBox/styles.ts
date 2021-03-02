@@ -27,8 +27,8 @@ const Container = styled.div`
   border-radius: 20px;
   z-index: 15;
   :hover {
-    transform: translate(-2px, -5px);
-    box-shadow: 7px 10px 5px rgba(0,0,0,0.5);
+    transform: translate(-5px, -5px);
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
   }
   transition: box-shadow, transform,  0.25s ease-in-out;
   &:hover{

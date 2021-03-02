@@ -14,7 +14,7 @@ const ProjectBox: React.FC<IProjectBox> = ({ project }) => {
   return(
     <ProjectBoxStyle.Container>
       {project.status &&
-        <ProjectBoxStyle.StatusTag status={project.status}>
+        <ProjectBoxStyle.StatusTag className='statusTag' status={project.status}>
           {project.status}
         </ProjectBoxStyle.StatusTag>
       }

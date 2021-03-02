@@ -27,7 +27,7 @@ const Container = styled.div`
   border-radius: 20px;
   z-index: 15;
   :hover {
-    transform: translate(-5px, -5px);
+    transform: translate(-3px, -3px);
     box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
   }
   transition: box-shadow, transform,  0.25s ease-in-out;
@@ -38,11 +38,18 @@ const Container = styled.div`
         width: 70px;
       }
     }
+
+    & > .statusTag {
+      transform: scale(1.1, 1.1);
+    }
   }
-  & > div > div{
+  & > div > div {
     svg {
       transition: all 0.25s ease-in-out;
     }
+  }
+  & > .statusTag {
+    transition: all 0.25s ease-in-out;
   }
 `;
 
@@ -91,11 +98,11 @@ const ImageBox = styled.div`
   z-index: 10;
 `;
 
-type StatusTag = {
+type IStatusTag = {
   status: 'Done' | 'In Progress'
 }
 
-const StatusTag = styled.div<StatusTag>`
+const StatusTag = styled.div<IStatusTag>`
   position: absolute;
   top:8px;
   left:8px;

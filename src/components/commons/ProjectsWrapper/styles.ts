@@ -8,11 +8,9 @@ const Container = styled.div`
   justify-content:center;
   align-items:center;
   position:relative;
-  padding: 15px;
   background-color: ${({ theme }) => theme.colors.background.main.color};
   border: 5px solid ${({ theme }) => theme.colors.primary.main.color};
   border-radius: 15px;
-  
   ${breakpointsMedia({
     mobile: css`
       margin: 25px 5px;
@@ -57,6 +55,8 @@ const ProjectsBox = styled.div`
       margin-top: 30px;
     `,
   })}
+  border-radius: 0 0 10px 10px;
+  background-color: ${({ theme }) => theme.colors.tertiary.main.color};
 `;
 
 const ProjectsWrapperStyle = {

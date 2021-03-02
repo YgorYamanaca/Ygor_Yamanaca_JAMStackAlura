@@ -19,7 +19,7 @@ const ligthTheme = {
   },
   tertiary: {
     main: {
-      color: '#a6dce6',
+      color: '#F0F8FF',
       contrastText: '#fff',
     },
   },

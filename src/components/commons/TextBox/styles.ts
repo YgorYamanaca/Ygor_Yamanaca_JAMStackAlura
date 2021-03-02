@@ -52,6 +52,8 @@ const ContentBox = styled.div`
       margin-top: 30px;
     `,
   })}
+  border-radius: 0 0 10px 10px;
+  background-color: ${({ theme }) => theme.colors.tertiary.main.color};
 `;
 
 const ProjectBoxStyle = {

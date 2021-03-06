@@ -1,9 +1,9 @@
 import Text from '@/components/foundation/Text';
 import IProject from 'interfaces/Porject';
 import React from 'react';
+import { useRouter } from 'next/router';
 import GitHubCorner from '../GitHubCorner';
 import ProjectBoxStyle from './styles';
-import { useRouter } from 'next/router';
 
 type IProjectBox = {
   project: IProject
@@ -11,26 +11,27 @@ type IProjectBox = {
 
 const ProjectBox: React.FC<IProjectBox> = ({ project }) => {
   const router = useRouter();
-  return(
+  return (
     <ProjectBoxStyle.Container>
-      {project.status &&
-        <ProjectBoxStyle.StatusTag className='statusTag' status={project.status}>
+      {project.status
+        && (
+        <ProjectBoxStyle.StatusTag className="statusTag" status={project.status}>
           {project.status}
         </ProjectBoxStyle.StatusTag>
-      }
-    
+        )}
+
       <ProjectBoxStyle.ImageBox>
-        <GitHubCorner projectRepoUrl={project.projectRepoUrl}/>
-        <img src={project.projectPhoto} onClick={() => project.projectUrl && router.push(project.projectUrl)}></img>
+        <GitHubCorner projectRepoUrl={project.projectRepoUrl} />
+        <img src={project.projectPhoto} onClick={() => project.projectUrl && router.push(project.projectUrl)} alt="projectPhoto" />
       </ProjectBoxStyle.ImageBox>
-      
+
       <ProjectBoxStyle.ProjectContext>
-        <Text variant='textTitle'>
+        <Text variant="textTitle">
           {project.title}
         </Text>
-        <hr></hr>
-        <div style={{marginTop: '10px'}}>
-          <Text variant='text'>
+        <hr />
+        <div style={{ marginTop: '10px' }}>
+          <Text variant="text">
             {project.context}
           </Text>
         </div>

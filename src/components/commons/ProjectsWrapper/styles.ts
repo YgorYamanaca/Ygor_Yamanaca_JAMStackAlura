@@ -17,7 +17,7 @@ const Container = styled.div`
     `,
     desktop: css`
       margin: 50px 35px;
-    `,  
+    `,
   })}
 `;
 
@@ -29,7 +29,7 @@ const TitleBox = styled.div`
   top: -35px;
   padding: 2.5px 25px;
   background-color: ${({ theme }) => theme.colors.background.main.color};
-  ${breakpointsMedia({ 
+  ${breakpointsMedia({
     mobile: css`
       font-size: 36px;
     `,
@@ -47,7 +47,7 @@ const ProjectsBox = styled.div`
   flex-flow: row wrap;
   justify-content:space-evenly;
   align-items:center;
-  ${breakpointsMedia({ 
+  ${breakpointsMedia({
     mobile: css`
       margin-top: 10px;
     `,
@@ -63,6 +63,6 @@ const ProjectsWrapperStyle = {
   Container,
   TitleBox,
   ProjectsBox,
-}
+};
 
 export default ProjectsWrapperStyle;

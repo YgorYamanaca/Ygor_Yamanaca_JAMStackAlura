@@ -1,4 +1,6 @@
-export default interface IBreakpoints{
+interface IBreakpoints{
   mobile: number,
   desktop: number,
 }
+
+export default IBreakpoints;

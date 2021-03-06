@@ -17,9 +17,11 @@ module.exports = {
   },
   plugins: [
     'react',
+    'react-hooks',
     '@typescript-eslint',
   ],
   rules: {
+    'max-len': 'off',
     'react/prop-types': 'off',
     'react/react-in-jsx-scope': 'off',
     'jsx-a11y/anchor-is-valid': 'off',
@@ -32,26 +34,15 @@ module.exports = {
         allowHigherOrderFunctions: true,
       },
     ],
-    'react/jsx-props-no-spreading': [1, {
-      html: 'ignore',
-      custom: 'ignore',
-      explicitSpread: 'ignore',
-    }],
-    // "import/no-unresolved": [
-    //   2,
-    //   { "caseSensitive": false }
-    // ],
-    // "react-hooks/rules-of-hooks": "error",
-    // "react-hooks/exhaustive-deps": "warn",
-    // "import/prefer-default-export": "off",
-
-    // "import/extensions": [
-    //   "error",
-    //   "ignorePackages",
-    //   {
-    //     "ts": "never",
-    //     "tsx": "never"
-    //   }
-    // ],
+    'react/jsx-props-no-spreading': 0,
+    'import/no-unresolved': 'off',
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
+    'import/prefer-default-export': 'off',
+    'import/extensions': 'off',
+    'no-use-before-define': 'off',
+    'require-default-props': 'off',
+    'jsx-a11y/click-events-have-key-events': 'off',
+    'jsx-a11y/no-noninteractive-element-interactions': 'off',
   },
 };

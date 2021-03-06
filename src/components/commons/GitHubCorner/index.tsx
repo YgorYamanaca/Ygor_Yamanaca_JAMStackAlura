@@ -1,12 +1,12 @@
 import React from 'react';
-import { GitHubCornerStyle } from './styles';
 import { useRouter } from 'next/router';
+import { GitHubCornerStyle } from './styles';
 
 type IGitHubCorner = {
   projectRepoUrl?: string;
 }
 
-const GitHubCorner: React.FC<IGitHubCorner> = ({projectRepoUrl}) => {
+const GitHubCorner: React.FC<IGitHubCorner> = ({ projectRepoUrl }) => {
   const router = useRouter();
   return (
     <GitHubCornerStyle.Wrapper onClick={() => projectRepoUrl && router.push(projectRepoUrl)}>
@@ -17,6 +17,6 @@ const GitHubCorner: React.FC<IGitHubCorner> = ({projectRepoUrl}) => {
       </GitHubCornerStyle.SVGWrapper>
     </GitHubCornerStyle.Wrapper>
   );
-}
+};
 
 export default GitHubCorner;

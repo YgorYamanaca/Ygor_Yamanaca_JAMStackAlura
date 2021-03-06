@@ -13,7 +13,7 @@ const Container = styled.footer`
     `,
     desktop: css`
       height: 65px; 
-    `,  
+    `,
   })}
   box-shadow: 0px -15px 20px -15px rgba(0,0,0,0.5);
   background-color: ${({ theme }) => theme.colors.primary.main.color};
@@ -27,6 +27,6 @@ const TextBox = styled.div`
 const FooterStyle = {
   Container,
   TextBox,
-}
+};
 
 export default FooterStyle;

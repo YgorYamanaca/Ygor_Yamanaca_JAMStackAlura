@@ -33,5 +33,5 @@ const SVGWrapper = styled.svg`
 
 export const GitHubCornerStyle = {
   Wrapper,
-  SVGWrapper
-}
+  SVGWrapper,
+};

@@ -16,7 +16,7 @@ const Container = styled.div`
     `,
     desktop: css`
       margin: 50px 35px;
-    `,  
+    `,
   })}
 `;
 
@@ -27,7 +27,7 @@ const TitleBox = styled.div`
   top: -35px;
   margin-bottom: 20px;
   padding: 2.5px 25px;
-  ${breakpointsMedia({ 
+  ${breakpointsMedia({
     mobile: css`
       font-size: 36px;
     `,
@@ -44,7 +44,7 @@ const ContentBox = styled.div`
   padding:20px;
   line-height:1.5;
   border-radius:20px;
-  ${breakpointsMedia({ 
+  ${breakpointsMedia({
     mobile: css`
       margin-top: 10px;
     `,
@@ -60,6 +60,6 @@ const ProjectBoxStyle = {
   Container,
   TitleBox,
   ContentBox,
-}
+};
 
 export default ProjectBoxStyle;

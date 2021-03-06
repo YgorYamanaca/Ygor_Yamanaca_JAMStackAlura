@@ -1,4 +1,3 @@
-
 const ligthTheme = {
   primary: {
     main: {
@@ -6,7 +5,7 @@ const ligthTheme = {
       contrastText: '#fff',
       colorHex: 'rgba(1,87,110,1)',
       colorHexAlpha: 'rgba(1,87,110, 0.5)',
-      
+
     },
   },
   secondary: {
@@ -31,8 +30,8 @@ const ligthTheme = {
   },
   statusColor: {
     done: '#43CF3B',
-    inProgress:'#007ACD',
-  }
+    inProgress: '#007ACD',
+  },
 };
 
 export default ligthTheme;

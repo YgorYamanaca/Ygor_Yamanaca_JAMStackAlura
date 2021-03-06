@@ -43,7 +43,7 @@ const typography = {
     fontSize: '14px',
     fontWeight: '400',
     lineHeight: 1.05,
-  }
+  },
 };
 
 export default typography;

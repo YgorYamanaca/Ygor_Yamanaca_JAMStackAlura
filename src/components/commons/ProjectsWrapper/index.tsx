@@ -3,8 +3,7 @@ import React from 'react';
 import ProjectBox from '../ProjectBox';
 import ProjectsWrapperStyle from './styles';
 
-const ProjectsWrapper: React.FC = ({}) => {
-
+const ProjectsWrapper: React.FC = () => {
   const projetctsContent: IProject[] = [
     {
       title: 'GhibliQuiz',
@@ -12,7 +11,7 @@ const ProjectsWrapper: React.FC = ({}) => {
       projectPhoto: 'images/AluraQuiz.jpg',
       projectUrl: 'https://ghibliquiz.ygoryamanaca.vercel.app/',
       projectRepoUrl: 'https://github.com/YgorYamanaca/ghibliquiz',
-      status:'Done'
+      status: 'Done',
     },
     {
       title: 'Instalura',
@@ -20,7 +19,7 @@ const ProjectsWrapper: React.FC = ({}) => {
       projectPhoto: 'images/instalura.jpg',
       projectUrl: 'https://instalura-base.ygoryamanaca.vercel.app/',
       projectRepoUrl: 'https://github.com/YgorYamanaca/instalura-base',
-      status:'In Progress'
+      status: 'In Progress',
     },
     {
       title: 'Projeto 3',
@@ -36,19 +35,17 @@ const ProjectsWrapper: React.FC = ({}) => {
       title: 'Projeto 5',
       context: 'Lorem 5 ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie rhoncus vestibulum. Aenean blandit velit.',
       projectPhoto: 'https://placehold.it/300x200',
-    }
-  ]
+    },
+  ];
 
-  return(
+  return (
     <ProjectsWrapperStyle.Container>
       <ProjectsWrapperStyle.TitleBox>
         Projetos
       </ProjectsWrapperStyle.TitleBox>
       <ProjectsWrapperStyle.ProjectsBox>
-        {projetctsContent.map((project: IProject) =>
-          <ProjectBox key={project.title} project={project} />
-        )}
-      </ProjectsWrapperStyle.ProjectsBox> 
+        {projetctsContent.map((project: IProject) => <ProjectBox key={project.title} project={project} />)}
+      </ProjectsWrapperStyle.ProjectsBox>
     </ProjectsWrapperStyle.Container>
   );
 };

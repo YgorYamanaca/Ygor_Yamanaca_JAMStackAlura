@@ -1,7 +1,7 @@
 import { CSSProperties } from 'react';
 import { CSSProp } from 'styled-components';
-import breakpointsMedia from './breakpointsMedia';
 import IBreakpoints from 'interfaces/breakpoints';
+import breakpointsMedia from './breakpointsMedia';
 
 export type IPropToStyle = {
   [cssKey in keyof CSSProperties]?: CSSProperties[cssKey] |

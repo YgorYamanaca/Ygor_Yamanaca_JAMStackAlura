@@ -11,7 +11,7 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => (
       <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300;400;700&display=swap" rel="stylesheet" />
       <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Fira+Sans+Condensed:wght@300;400;700&display=swap" rel="stylesheet" />
     </Head>
-    <ThemeManager> 
+    <ThemeManager>
       <Component {...pageProps} />
     </ThemeManager>
   </>

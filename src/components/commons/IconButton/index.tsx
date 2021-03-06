@@ -9,17 +9,15 @@ type IconButtonType = {
 
 const IconButton: React.FC<IconButtonType> = ({
   children,
-  onClick
-}) => {
-  return(
-    <IconButtonStyle.Container onClick={() => onClick && onClick()}>
-      {children}
-    </IconButtonStyle.Container>
-  );
-}
+  onClick,
+}) => (
+  <IconButtonStyle.Container onClick={() => onClick && onClick()}>
+    {children}
+  </IconButtonStyle.Container>
+);
 
 IconButton.propTypes = {
   children: PropTypes.node.isRequired,
-}
+};
 
 export default IconButton;

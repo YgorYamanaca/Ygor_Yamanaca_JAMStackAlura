@@ -4,7 +4,7 @@ import ProjectBox from '../ProjectBox';
 import ProjectsWrapperStyle from './styles';
 
 const ProjectsWrapper: React.FC = () => {
-  const projetctsContent: IProject[            ] = [
+  const projetctsContent: IProject[] = [
     {
       title: 'GhibliQuiz',
       context: 'Projeto desenvolvido durante a imersão React oferecido pela Alura.',

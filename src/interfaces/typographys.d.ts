@@ -4,7 +4,7 @@ interface ITypography{
   lineHeight: number,
 }
 
-export default interface ITypographyVariants {
+interface ITypographyVariants {
   title: ITypography,
   titleMobile: ITypography,
   subTitle: ITypography,
@@ -15,3 +15,5 @@ export default interface ITypographyVariants {
   text: ITypography,
   textMobile: ITypography,
 }
+
+export default ITypographyVariants;

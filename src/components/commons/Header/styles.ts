@@ -6,7 +6,7 @@ const Container = styled.header`
   position:relative;
   flex-direction: column;
   background-color: ${({ theme }) => theme.colors.secondary.main.color};
-  ${breakpointsMedia({ 
+  ${breakpointsMedia({
     mobile: css`
       height: 350px;
       place-items:center;
@@ -38,6 +38,6 @@ const HeaderStyle = {
   Container,
   TextBox,
   AbsoluteContainer,
-}
+};
 
 export default HeaderStyle;

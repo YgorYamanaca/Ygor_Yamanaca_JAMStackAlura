@@ -9,7 +9,7 @@ const Container = styled.div`
   box-shadow: 3px 4px 5px rgba(0,0,0,0.5);
   margin: 19px;
   user-select: none;
-  ${breakpointsMedia({ 
+  ${breakpointsMedia({
     mobile: css`
       flex-direction: column;
       align-items:center;
@@ -59,7 +59,7 @@ const ProjectContext = styled.div`
   align-items: center;
   justify-content:space-evenly;
   text-align:center;
-  ${breakpointsMedia({ 
+  ${breakpointsMedia({
     mobile: css`
       margin: 15px 0 0 0;
     `,
@@ -69,14 +69,14 @@ const ProjectContext = styled.div`
   })}
   padding: 5px;
   & > hr {
-    ${breakpointsMedia({ 
-      mobile: css`
+    ${breakpointsMedia({
+    mobile: css`
         width: 80%;
       `,
-      desktop: css`
+    desktop: css`
         width: 100%;
       `,
-    })}
+  })}
     margin-left:0;
     margin-right:0;
     background-color: ${({ theme }) => theme.colors.primary.main.contrastText};
@@ -106,11 +106,11 @@ const StatusTag = styled.div<IStatusTag>`
   position: absolute;
   top:8px;
   left:8px;
-  background-color: ${({theme, status}) => get(theme, `colors.statusColor.${status=== 'Done'? 'done' : 'inProgress'}`)};
+  background-color: ${({ theme, status }) => get(theme, `colors.statusColor.${status === 'Done' ? 'done' : 'inProgress'}`)};
   z-index: 150;
   padding:2.5px 10px;
   border-radius:15px;
-  color: ${({theme}) => theme.colors.primary.main.contrastText};
+  color: ${({ theme }) => theme.colors.primary.main.contrastText};
 `;
 
 const ProjectBoxStyle = {
@@ -118,6 +118,6 @@ const ProjectBoxStyle = {
   ProjectContext,
   ImageBox,
   StatusTag,
-}
+};
 
 export default ProjectBoxStyle;

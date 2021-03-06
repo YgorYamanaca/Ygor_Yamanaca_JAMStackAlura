@@ -1,5 +1,3 @@
-
-
 const darkTheme = {
   primary: {
     main: {
@@ -22,7 +20,7 @@ const darkTheme = {
   background: {
     main: {
       color: '#1186a7',
-      contrastText: '#fff'
+      contrastText: '#fff',
     },
   },
   borders: {
@@ -33,8 +31,8 @@ const darkTheme = {
   },
   statusColor: {
     done: '#43CF3B',
-    inProgress:'#007ACD',
-  }
+    inProgress: '#007ACD',
+  },
 };
 
 export default darkTheme;

@@ -7,11 +7,7 @@ type IBoxProps = {
 
 const BoxContainer = styled.div<IBoxProps>`
   // Testando nova solução para pegar qualquer propriedade e aplicar
-  ${(props) => {
-    return (Object.keys(props) as Array<keyof CSSProperties>).map((keys) => {
-      return propToStyle(keys)
-    })
-  }}
+  ${(props) => (Object.keys(props) as Array<keyof CSSProperties>).map((keys) => propToStyle(keys))}
 `;
 
 export default BoxContainer;

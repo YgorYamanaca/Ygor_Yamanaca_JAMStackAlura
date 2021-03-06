@@ -1,4 +1,4 @@
-import styled, {css} from 'styled-components';
+import styled, { css } from 'styled-components';
 import breakpointsMedia from 'utils/breakpointsMedia';
 
 const Container = styled.nav`
@@ -14,7 +14,7 @@ const Container = styled.nav`
       height: 65px; 
       justify-content: flex-start;
       margin-bottom:30px;
-    `,  
+    `,
   })}
   box-shadow: 1px 15px 20px -15px rgba(0,0,0, 0.5);
   z-index:10;
@@ -22,26 +22,26 @@ const Container = styled.nav`
 `;
 
 const UserPhotoContainer = styled.div`
-  ${breakpointsMedia({ 
-     mobile: css`
+  ${breakpointsMedia({
+    mobile: css`
       order: 0;
    `,
     desktop: css`
       order: -1;
-    `, 
+    `,
   })}
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  ${breakpointsMedia({ 
-     mobile: css`
+  ${breakpointsMedia({
+    mobile: css`
       min-width: 200px;
    `,
     desktop: css`
       min-width: 275px;
       margin-left: 55px;
-    `, 
+    `,
   })}
 `;
 
@@ -49,8 +49,8 @@ const UserPhoto = styled.div`
   position: absolute;
   border-radius: 50%;
   border: 7.5px solid ${({ theme }) => theme.colors.primary.main.color};
-  ${breakpointsMedia({ 
-     mobile: css`
+  ${breakpointsMedia({
+    mobile: css`
       height: 200px;
       width: 200px;
    `,
@@ -58,7 +58,7 @@ const UserPhoto = styled.div`
     desktop: css`
       height: 205px;
       width: 205px;
-    `, 
+    `,
   })}
   bottom: -20px;
   background-image:url('images/Corgygor3.jpg');
@@ -79,6 +79,6 @@ const NavBarStyle = {
   UserPhotoContainer,
   UserPhoto,
   MenuContainer,
-}
+};
 
 export default NavBarStyle;

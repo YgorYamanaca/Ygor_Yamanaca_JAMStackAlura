@@ -25,7 +25,7 @@ const Container = styled.div`
   
   background-color: ${({ theme }) => theme.colors.primary.main.color};
   border-radius: 20px;
-  z-index: 15;
+  z-index: 9;
   :hover {
     transform: translate(-3px, -3px);
     box-shadow: 10px 10px 10px rgba(0,0,0,0.5);

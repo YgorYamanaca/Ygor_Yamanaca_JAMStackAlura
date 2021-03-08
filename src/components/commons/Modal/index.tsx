@@ -20,7 +20,7 @@ const Modal: React.FC<IModalProps> = ({ isOpen, children }) => (
           scale: 1,
         },
         closed: {
-          scale: 1,
+          scale: 0,
         },
       }}
       animate={isOpen ? 'open' : 'closed'}

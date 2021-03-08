@@ -13,7 +13,7 @@ const Container = styled.div`
     }
   }
   & > span {
-    transition: transform, background-color, 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
     border-radius: 16px;
     padding:3px;
   }

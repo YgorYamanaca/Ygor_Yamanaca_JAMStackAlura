@@ -4,7 +4,7 @@ import LinkedinIcon from '@/assets/Icons/likedInIcon';
 import IconButton from '../../IconButton';
 import NavBarStyle from './styles';
 import LinkButton from '../../LinkButton';
-import Modal, { IModalChildren } from '../../Modal';
+import Modal from '../../Modal';
 import Form from '../../Form';
 
 const NavBar: React.FC = () => {
@@ -14,8 +14,8 @@ const NavBar: React.FC = () => {
       <Modal
         isOpen={isOpen}
       >
-        {(props: IModalChildren) => (
-          <Form modalProps={props} onCloseFunction={() => setOpen(false)} />
+        {() => (
+          <Form onCloseFunction={() => setOpen(false)} />
         )}
       </Modal>
       <NavBarStyle.MenuContainer>

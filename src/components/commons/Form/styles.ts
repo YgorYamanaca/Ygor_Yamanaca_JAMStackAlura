@@ -10,19 +10,19 @@ const Container = styled.div`
   margin: auto;
   ${breakpointsMedia({
     mobile: css`
-      height: 70%;
       width: 85%;
-
+      padding:40px 30px;
     `,
     desktop: css`
-      height: 50%;
       width: 50%;
+      padding:50px 30px;
     `,
   })}
   border-radius:16px;
-  padding:20px;
 
-  & > form{
+  & > form {
+    display: flex;
+    flex-direction: column;
     height: 100%;
     width: 100%;
   }
@@ -31,8 +31,8 @@ const Container = styled.div`
 const CloseBox = styled.div`
   display: flex;
   position: absolute;
-  top: 10px;
-  right: 15px;
+  top: 8px;
+  right: 12px;
   cursor: pointer;
   z-index: 50;
 `;

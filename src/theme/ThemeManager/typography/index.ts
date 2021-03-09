@@ -15,12 +15,12 @@ const typography = {
     lineHeight: 1.15,
   },
   link: {
-    fontSize: '28px',
+    fontSize: '24px',
     fontWeight: '400',
     lineHeight: 1.05,
   },
   linkMobile: {
-    fontSize: '14px',
+    fontSize: '16px',
     fontWeight: '400',
     lineHeight: 1.05,
   },
@@ -40,7 +40,7 @@ const typography = {
     lineHeight: 1.05,
   },
   textMobile: {
-    fontSize: '14px',
+    fontSize: '16px',
     fontWeight: '400',
     lineHeight: 1.05,
   },

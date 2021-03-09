@@ -12,7 +12,7 @@ const Container = styled.div`
   &:hover{
     background-color: ${({ theme }) => theme.colors.secondary.main.color};
     & > svg { 
-      transform: scale(1.1, 1.1);
+      transform: scale(1.07, 1.07);
     }
   };
   

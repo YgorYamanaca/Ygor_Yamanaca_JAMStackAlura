@@ -8,6 +8,7 @@
     "lint": "eslint --ignore-path .gitignore . --ext .tsx,.ts",
     "lint.fix": "eslint --fix . --ext .ts,.tsx",
     "commit": "cz",
+    "postinstall": "husky install",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -23,6 +24,8 @@
     "styled-normalize": "^8.0.7"
   },
   "devDependencies": {
+    "@commitlint/cli": "^12.0.1",
+    "@commitlint/config-conventional": "^12.0.1",
     "@types/lodash": "^4.14.168",
     "@types/node": "12.0.12",
     "@types/react": "16.8.23",
@@ -47,5 +50,16 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  }
+  },
+  "description": "This is a really simple project that show the usage of Next.js with TypeScript and Styled Components.",
+  "main": ".eslintrc.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YgorYamanaca/portifolio.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/YgorYamanaca/portifolio/issues"
+  },
+  "homepage": "https://github.com/YgorYamanaca/portifolio#readme"
 }

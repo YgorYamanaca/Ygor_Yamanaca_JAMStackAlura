@@ -8,7 +8,7 @@
     "lint": "eslint --ignore-path .gitignore . --ext .tsx,.ts",
     "lint.fix": "eslint --fix . --ext .ts,.tsx",
     "commit": "cz",
-    "prepare": "husky install"
+    "postinstall": "husky install"
   },
   "dependencies": {
     "@crello/react-lottie": "0.0.11",

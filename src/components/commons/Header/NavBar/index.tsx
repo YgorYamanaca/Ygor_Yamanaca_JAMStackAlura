@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import GitHubIcon from '@/assets/Icons/gitHubIcon';
 import LinkedinIcon from '@/assets/Icons/likedInIcon';
+import useIsMobile from 'utils/useIsMobile';
+import EmailIcon from '@/assets/Icons/emailIcon';
 import IconButton from '../../IconButton';
 import NavBarStyle from './styles';
 import LinkButton from '../../LinkButton';
@@ -19,10 +21,20 @@ const NavBar: React.FC = () => {
         )}
       </Modal>
       <NavBarStyle.MenuContainer>
-        <LinkButton
-          text="Contato"
-          onClick={() => setOpen(true)}
-        />
+        {useIsMobile()
+          ? (
+            <IconButton
+              onClick={() => setOpen(true)}
+            >
+              <EmailIcon />
+            </IconButton>
+          )
+          : (
+            <LinkButton
+              text="Contato"
+              onClick={() => setOpen(true)}
+            />
+          )}
       </NavBarStyle.MenuContainer>
       <NavBarStyle.UserPhotoContainer>
         <NavBarStyle.UserPhoto />

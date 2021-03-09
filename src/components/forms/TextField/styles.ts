@@ -8,6 +8,7 @@ const Input = styled.input`
   border: 1px solid ${({ theme }) => theme.colors.primary.main.color};
   padding: 10px 12px;
   outline: 0;
+  border-radius: 10px;
 `;
 
 const TextFieldStyle = {

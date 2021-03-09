@@ -10,6 +10,7 @@ const Input = styled.textarea`
   padding: 10px 12px;
   outline: 0;
   resize: none;
+  border-radius: 10px;
 `;
 
 const TextAreaStyle = {

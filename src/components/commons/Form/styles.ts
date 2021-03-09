@@ -11,11 +11,11 @@ const Container = styled.div`
   ${breakpointsMedia({
     mobile: css`
       width: 85%;
-      padding:40px 30px;
+      padding:35px 30px 25px 30px;
     `,
     desktop: css`
       width: 50%;
-      padding:50px 30px;
+      padding:50px 30px 35px 30px;
     `,
   })}
   border-radius:16px;
@@ -31,10 +31,28 @@ const Container = styled.div`
 const CloseBox = styled.div`
   display: flex;
   position: absolute;
-  top: 8px;
-  right: 12px;
+  top: 10px;
+  right: 14px;
   cursor: pointer;
   z-index: 50;
+  ${breakpointsMedia({
+    mobile: css`
+    & > svg{
+      width: 25px;
+      height: 25px;
+    }
+    `,
+    desktop: css`
+      & > svg{
+        width: 35px;
+        height: 35px;
+      }
+    `,
+  })}
+
+  &:active{
+    transform: scale(0.90, 0.90);
+  }
 `;
 
 const FormStyles = {

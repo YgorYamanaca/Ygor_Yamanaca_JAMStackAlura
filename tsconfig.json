@@ -25,7 +25,8 @@
       "@/components/*": ["components/*"],
       "@/theme/*": ["theme/*"],
       "@/store/*": ["store/*"],
-      "@/interfaces/*": ["interfaces/*"]
+      "@/interfaces/*": ["interfaces/*"],
+      "@/enum/*": ["enum/*"]
     }
   },
   "exclude": ["node_modules"],

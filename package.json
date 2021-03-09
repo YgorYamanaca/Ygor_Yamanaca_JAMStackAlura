@@ -8,7 +8,8 @@
     "lint": "eslint --ignore-path .gitignore . --ext .tsx,.ts",
     "lint.fix": "eslint --fix . --ext .ts,.tsx",
     "commit": "cz",
-    "postinstall": "husky install"
+    "postinstall": "husky install",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@crello/react-lottie": "0.0.11",
@@ -49,5 +50,16 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  }
+  },
+  "description": "This is a really simple project that show the usage of Next.js with TypeScript and Styled Components.",
+  "main": ".eslintrc.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YgorYamanaca/portifolio.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/YgorYamanaca/portifolio/issues"
+  },
+  "homepage": "https://github.com/YgorYamanaca/portifolio#readme"
 }

@@ -10,7 +10,7 @@ import Modal from '../../Modal';
 import Form from '../../Form';
 
 const NavBar: React.FC = () => {
-  const [isOpen, setOpen] = useState<boolean>(true);
+  const [isOpen, setOpen] = useState<boolean>(false);
   return (
     <NavBarStyle.Container>
       <Modal
